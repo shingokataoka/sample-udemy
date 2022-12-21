@@ -1,0 +1,10 @@
+name: 
+on: [push]  # 開始条件のイベントを指定
+jobs: 
+  job-test:  # ジョブ名: とする（講座ではjobIDと言っていた）
+    runs-on: ubuntu-latest  # 実行される仮想環境OSを指定
+    steps:   # この中に、以下のように実行してほしいコマンドを書く
+      - run: echo "action-test01\n"
+      - run: echo "action-test02\n"
+      - run: echo "action-test03\n"
+      
